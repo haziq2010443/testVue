@@ -2,12 +2,43 @@
 <html lang="">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="dist/css/style.css">
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="text-gray-800 font-inter">
+
+    <!-- Start: sidebar -->
+     <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4">
+      <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
+        <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover">
+        <span class="text-lg font-bold text-gray-200 ml-3">Logo</span>
+      </a>
+      <ul class="mt-4">
+        <li class="mb-1 group active">
+          <a href="#" class="flex items-center py-2 px-4 text-gray-200 hover:text-gray-400 hover:bg-gray-950 group-[.active]:bg-gray-800 group-[.active]:text-white">
+            <i class="ri-home-2-line mr-3"></i>
+            <span class="text-sm">Dashboard</span>
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="flex items-center py-2 px-4 text-gray-200 hover:text-gray-400 hover:bg-gray-950">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="10" width="4" height="10" />
+                <rect x="10" y="4" width="4" height="16" />
+                <rect x="16" y="7" width="4" height="13" />
+              </svg>
+            </div>
+            <span class="text-sm">Leaderboard</span>
+          </a>
+        </li>
+       </ul>
+     </div>
+    <!-- End: sidebar -->
+
+    <!-- <div id="app"></div>
+    <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>
