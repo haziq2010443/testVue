@@ -10,7 +10,7 @@
   <body class="text-gray-800 font-inter">
 
     <!-- Start: sidebar -->
-     <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4">
+    <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4">
       <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
         <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover">
         <span class="text-lg font-bold text-gray-200 ml-3">Logo</span>
@@ -23,7 +23,8 @@
           </a>
         </li>
         <li class="mb-1 group">
-          <a href="#" class="flex items-center py-2 px-4 text-gray-200 hover:text-gray-400 hover:bg-gray-950 group-[.active]:bg-gray-800 group-[.active]:text-white">
+          <a href="#" class="flex items-center py-2 px-4 text-gray-200 hover:text-gray-400 hover:bg-gray-950 group-[.active]:bg-gray-800 group-[.active]:text-white
+          group-[.selected]:bg-gray-950 group[.selected]:text-gray-100 sidebar-dropdown-toggle">
             <div class="mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18.75px" height="17.6px" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="4" y="10" width="4" height="10" />
@@ -32,9 +33,9 @@
               </svg>
             </div>
             <span class="text-sm">Leaderboard</span>
-            <i class="ri-arrow-right-s-line ml-auto"></i>
+            <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90 transition-all"></i>
           </a>
-          <ul class="pl-7 mt-2">
+          <ul class="pl-7 mt-2 hidden group-[.selected]:block">
             <span class="mb-4 text-sm flex items-center text-gray-300">Human Class</span>
             <li class="mb-4">
               <a href="#" class="text-gray-300 text-sm flex items-center hover:text-gray-400 hover:bg-gray-950 before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Pahlawan</a>
@@ -64,10 +65,19 @@
           </ul>
         </li>
        </ul>
-     </div>
+    </div>
     <!-- End: sidebar -->
+
+    <!-- Start: Main -->
+    <main class="w-[calc(100%-256px)] ml-64">
+      <div class="py-2 px-4 bg-white flex items-center">
+        Hi
+      </div>
+    </main>
+    <!-- End: Main -->
 
     <!-- <div id="app"></div>
     <script type="module" src="/src/main.js"></script> -->
+    <script src="./dist/js/script.js"></script>
   </body>
 </html>
